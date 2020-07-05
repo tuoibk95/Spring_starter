@@ -1,2 +1,13 @@
-C:\Users\TrongDat\eclipse-workspace\springboot_starter\src\main\java\com\springbootstarter\api\Application.java
-C:\Users\TrongDat\eclipse-workspace\springboot_starter\src\main\java\com\springbootstarter\api\HomeAPI.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\repository\NewRepository.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\dto\NewDTO.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\services\impl\NewService.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\entity\BaseEntity.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\api\NewAPI.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\entity\NewEntity.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\entity\CategoryEntity.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\repository\CategoryRepository.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\Application.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\entity\UserEntity.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\entity\RoleEntity.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\services\INewService.java
+C:\Users\TrongDat\eclipse-workspace\Spring_starter\src\main\java\com\springbootstarter\converter\NewConverter.java
