@@ -11,5 +11,7 @@ import com.springbootstarter.dto.NewDTO;
  * @author TuoiLv
  */
 public interface INewService {
-	public NewDTO save(NewDTO newDTƠ);
+	public NewDTO save(NewDTO newDTO);
+
+	public NewDTO update(NewDTO newDTO);
 }

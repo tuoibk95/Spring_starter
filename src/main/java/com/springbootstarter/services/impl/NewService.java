@@ -39,4 +39,11 @@ public class NewService implements INewService {
 		newEntity = newRepository.save(newEntity);
 		return newConverter.toDTO(newEntity);
 	}
+
+	@Override
+	public NewDTO update(NewDTO newDTO) {
+		return null;
+	}
+
+
 }

@@ -19,12 +19,7 @@ import com.springbootstarter.dto.NewDTO;
  */
 @RestController
 public class NewAPI {
-	
-	@GetMapping(value = "/new")
-	public NewDTO getNew(@RequestBody NewDTO model) {
-		return model;
-	}
-	
+
 	@PostMapping(value = "/new")
 	public NewDTO createNew(@RequestBody NewDTO model) {
 		return model;
