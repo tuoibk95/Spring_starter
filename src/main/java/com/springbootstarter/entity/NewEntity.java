@@ -15,7 +15,7 @@ import javax.persistence.Table;
  * @author TuoiLv
  */
 @Entity
-@Table(name="news")
+@Table(name="new")
 public class NewEntity extends BaseEntity {
 	
 	@Column(name="title")
@@ -31,7 +31,7 @@ public class NewEntity extends BaseEntity {
 	private String content;
 
 	@ManyToOne
-	@JoinColumn(name = "caegory_id")
+	@JoinColumn(name = "category_id")
 	private CategoryEntity category;
 	
 	/**

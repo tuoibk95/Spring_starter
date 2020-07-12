@@ -5,6 +5,7 @@
 package com.springbootstarter.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.springbootstarter.converter.NewConverter;
@@ -14,6 +15,9 @@ import com.springbootstarter.entity.NewEntity;
 import com.springbootstarter.repository.CategoryRepository;
 import com.springbootstarter.repository.NewRepository;
 import com.springbootstarter.services.INewService;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 
@@ -41,15 +45,9 @@ public class NewService implements INewService {
 			newEntity = newConverter.toEntity(newDTO);
 		}
 		CategoryEntity categoryEntity = categoryRepository.findOneByCode(newDTO.getCategoryCode());
-//		NewEntity newEntity = newConverter.toEntity(newDTO);
 		newEntity.setCategory(categoryEntity);
 		newEntity = newRepository.save(newEntity);
 		return newConverter.toDTO(newEntity);
-	}
-
-	@Override
-	public NewDTO update(NewDTO newDTO) {
-		return null;
 	}
 
 	@Override
@@ -57,6 +55,22 @@ public class NewService implements INewService {
 		for (long item: ids) {
 			newRepository.delete(item);
 		}
+	}
+
+	@Override
+	public List<NewDTO> findAll(Pageable pageable) {
+		List<NewDTO> results = new ArrayList<>();
+		List<NewEntity> entities = newRepository.findAll(pageable).getContent();
+		for (NewEntity item: entities) {
+			NewDTO newDTO = newConverter.toDTO(item);
+			results.add(newDTO);
+		}
+		return results;
+	}
+
+	@Override
+	public int totalItem() {
+		return (int) newRepository.count();
 	}
 
 }

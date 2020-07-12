@@ -5,15 +5,20 @@
 package com.springbootstarter.services;
 
 import com.springbootstarter.dto.NewDTO;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
 
 /**
  * 
  * @author TuoiLv
  */
 public interface INewService {
-	public NewDTO save(NewDTO newDTO);
+	NewDTO save(NewDTO newDTO);
 
-	public NewDTO update(NewDTO newDTO);
+	void delete(long[] ids);
 
-	public void delete(long[] ids);
+	List<NewDTO> findAll(Pageable pageable);
+
+	int totalItem();
 }

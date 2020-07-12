@@ -15,7 +15,7 @@ import com.springbootstarter.entity.NewEntity;
  */
 @Component
 public class NewConverter {
-	public  NewEntity toEntity(NewDTO dto) {
+	public NewEntity toEntity(NewDTO dto) {
 		NewEntity newEntity = new NewEntity();
 		newEntity.setTitle(dto.getTitle());
 		newEntity.setContent(dto.getContent());
