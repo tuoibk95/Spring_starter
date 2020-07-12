@@ -8,7 +8,7 @@ package com.springbootstarter.dto;
  * 
  * @author TuoiLv
  */
-public class NewDTO {
+public class NewDTO extends AbstractDTO<NewDTO> {
 	private String title;
 	private String content;
 	private String shortDescription;
