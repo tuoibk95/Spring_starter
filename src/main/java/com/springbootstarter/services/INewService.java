@@ -20,5 +20,7 @@ public interface INewService {
 
 	List<NewDTO> findAll(Pageable pageable);
 
+	List<NewDTO> findAll();
+
 	int totalItem();
 }

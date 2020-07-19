@@ -69,6 +69,17 @@ public class NewService implements INewService {
 	}
 
 	@Override
+	public List<NewDTO> findAll() {
+		List<NewDTO> results = new ArrayList<>();
+		List<NewEntity> entities = newRepository.findAll();
+		for (NewEntity item: entities) {
+			NewDTO newDTO = newConverter.toDTO(item);
+			results.add(newDTO);
+		}
+		return results;
+	}
+
+	@Override
 	public int totalItem() {
 		return (int) newRepository.count();
 	}
